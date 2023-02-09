@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strange Book</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  
+  <nav>
+    <div class="container">
+      <h2 class="log">
+        Stranger Book
+      </h2>
+      <div class="search-bar">
+        <i class="uil uil-search"></i>
+        <input type="search" placeholder="Looking for oddities...">
+      </div>
+      <div class="create">
+        <label class="btn btn-primary" for="create-post">Create</label>
+        <div class="profile-photo">
+          <img src="img/mypicture.jpg" alt="My photo">
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="container">
+      <div class="left">
+        <a class="profile">
+          <div class="profile-photo">
+            <img src="img/mypicture.jpg" alt="My photo">
+          </div>
+          <div class="handle">
+            <h4>Jim Hopper</h4>
+            <p class="text-muted">
+              @hopper
+            </p>
+          </div>
+        </a>
+
+        <div class="sidebar">
+          <a class="menu-item active">
+            <span><i class="uil uil-home"></i></span>
+            <h3>Home</h3>
+          </a>
+          <a class="menu-item ">
+            <span><i class="uil uil-compass"></i></span>
+            <h3>Explore</h3>
+          </a>
+          <a class="menu-item" id="notifications">
+            <span><i class="uil uil-bell"><small class="notification-count">2</small></i></span>
+            <h3>Notifications</h3>
+
+            <div class="notifications-popup">
+              <div>
+                <div class="profile-photo">
+                  <img src="img/profile-picture-1.jpg" alt="">
+                </div>
+                <div class="notification-body">
+                  <b>Steve Harrington</b> accepted your friend request
+                  <small class="text-muted">2 DAYS AGO</small>
+                </div>
+              </div>
+
+              <div>
+                <div class="profile-photo">
+                  <img src="img/profile-picture-2.jpg" alt="">
+                </div>
+                <div class="notification-body">
+                  <b>Max Mayfield</b> accepted your friend request
+                  <small class="text-muted">10 DAYS AGO</small>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="menu-item" id="messages-notifications">
+            <span><i class="uil uil-envelope-alt"><small class="notification-count">6</small></i></span>
+            <h3>Messages</h3>
+          </a>
+          <a class="menu-item ">
+            <span><i class="uil uil-bookmark"></i> </span>
+            <h3>Bookmarks</h3>
+          </a>
+          <a class="menu-item ">
+            <span><i class="uil uil-chart-line"></i></span>
+            <h3>Analytics</h3>
+          </a>
+          <a class="menu-item" id="theme">
+            <span><i class="uil uil-palette"></i></span>
+            <h3>Theme</h3>
+          </a>
+          <a class="menu-item ">
+            <span><i class="uil uil-setting"></i></span>
+            <h3>Settings</h3>
+          </a>
+        </div>
+
+        <label class="btn btn-primary" for="create-post">Create Post</label>
+      </div>
+
+      <div class="middle">
+        <div class="stories">
+          <div class="story">
+            <div class="profile-photo">
+              <img src="img/mypicture.jpg" alt="My photo">
+            </div>
+            <p class="name">Jim Hopper</p>
+          </div>
+          <div class="story">
+            <div class="profile-photo">
+              <img src="img/profile-picture-1.jpg" alt="My photo">
+            </div>
+            <p class="name">Steve Harrington</p>
+          </div>
+          <div class="story">
+            <div class="profile-photo">
+              <img src="img/profile-picture-3.jpg" alt="My photo">
+            </div>
+            <p class="name">Robin Buckley</p>
+          </div>
+          <div class="story">
+            <div class="profile-photo">
+              <img src="img/profile-picture-5.jpg" alt="My photo">
+            </div>
+            <p class="name">Nancy Wheeler</p>
+          </div>
+          <div class="story">
+            <div class="profile-photo">
+              <img src="img/profile-picture-2.jpg" alt="My photo">
+            </div>
+            <p class="name">Max Mayfield</p>
+          </div>
+          <div class="story">
+            <div class="profile-photo">
+              <img src="img/profile-picture-6.jpg" alt="My photo">
+            </div>
+            <p class="name">Eleven</p>
+          </div>
+        </div>
+
+        <form class="create-post">
+          <div class="profile-photo">
+            <img src="img/mypicture.jpg" alt="My Photo">
+          </div>
+            <input type="text" placeholder="What's on your mind, Hopper?" id="create-post">
+            <input type="submit" value="Post" class="btn btn-primary">
+        </form>
+
+        <div class="feeds">
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-photo">
+                  <img src="img/profile-picture-2.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3>Max Mayfield</h3>
+                  <small>Hawkins, 15 minuts ago</small>
+                </div>
+              </div>
+              <span class="edit">
+                <i class="uil uil-ellipsis-h"></i>
+              </span>
+            </div>
+            <div class="photo">
+              <img src="img/photo-1.jpg" alt="">
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span><i class="uil uil-heart"></i></span>
+                <span><i class="uil uil-comment"></i></span>
+                <span><i class="uil uil-share"></i></span>
+              </div>
+              <div class="bookmark">
+                <span><i class="uil uil-bookmark"></i></span>
+              </div>
+            </div>
+            <div class="liked-by">
+              <span><img src="img/profile-picture-3.jpg" alt=""></span>
+              <span><img src="img/profile-picture-1.jpg" alt=""></span>
+              <span><img src="img/profile-picture-4.jpg" alt=""></span>
+              <p>Liked by <b>Robin Buckley</b> and <b>1,231 others</b></p>
+            </div>
+            <div class="caption">
+              <p><b>Max Mayfield</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span class="harsh-tag">#lonely</span></p>
+            </div>
+            <div class="comments text-muted">
+              View all 254 comments
+            </div>
+          </div>
+
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-photo">
+                  <img src="img/profile-picture-6.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3>Eleven</h3>
+                  <small>Hawkins, 1 days ago</small>
+                </div>
+              </div>
+              <span class="edit">
+                <i class="uil uil-ellipsis-h"></i>
+              </span>
+            </div>
+            <div class="photo">
+              <img src="img/photo-3.jpg" alt="">
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span><i class="uil uil-heart"></i></span>
+                <span><i class="uil uil-comment"></i></span>
+                <span><i class="uil uil-share"></i></span>
+              </div>
+              <div class="bookmark">
+                <span><i class="uil uil-bookmark"></i></span>
+              </div>
+            </div>
+            <div class="liked-by">
+              <span><img src="img/profile-picture-2.jpg" alt=""></span>
+              <span><img src="img/profile-picture-6.jpg" alt=""></span>
+              <span><img src="img/profile-picture-5.jpg" alt=""></span>
+              <p>Liked by <b>Nancy Wheeler</b> and <b>11 others</b></p>
+            </div>
+            <div class="caption">
+              <p><b>Eleven</b> My best friends forever! <span class="harsh-tag">#Best</span><span class="harsh-tag">#Team</span></p>
+            </div>
+            <div class="comments text-muted">
+              View all 254 comments
+            </div>
+          </div>
+
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-photo">
+                  <img src="img/profile-picture-1.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3>Steve Harrington</h3>
+                  <small>Hawkins, 5 days ago</small>
+                </div>
+              </div>
+              <span class="edit">
+                <i class="uil uil-ellipsis-h"></i>
+              </span>
+            </div>
+            <div class="photo">
+              <img src="img/photo-5.jpg" alt="">
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span><i class="uil uil-heart"></i></span>
+                <span><i class="uil uil-comment"></i></span>
+                <span><i class="uil uil-share"></i></span>
+              </div>
+              <div class="bookmark">
+                <span><i class="uil uil-bookmark"></i></span>
+              </div>
+            </div>
+            <div class="liked-by">
+              <span><img src="img/profile-picture-3.jpg" alt=""></span>
+              <span><img src="img/profile-picture-1.jpg" alt=""></span>
+              <span><img src="img/profile-picture-4.jpg" alt=""></span>
+              <p>Liked by <b>Robin Buckley</b> and <b>5.114 others</b></p>
+            </div>
+            <div class="caption">
+              <p><b>Steve Harrington</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. <span class="harsh-tag">#lonely</span></p>
+            </div>
+            <div class="comments text-muted">
+              View all 254 comments
+            </div>
+          </div>
+
+          <div class="feed">
+            <div class="head">
+              <div class="user">
+                <div class="profile-photo">
+                  <img src="img/profile-picture-5.jpg" alt="">
+                </div>
+                <div class="info">
+                  <h3>Nancy Wheeler</h3>
+                  <small>Hawkins, 1 month ago</small>
+                </div>
+              </div>
+              <span class="edit">
+                <i class="uil uil-ellipsis-h"></i>
+              </span>
+            </div>
+            <div class="photo">
+              <img src="img/photo-4.jpg" alt="">
+            </div>
+            <div class="action-buttons">
+              <div class="interaction-buttons">
+                <span><i class="uil uil-heart"></i></span>
+                <span><i class="uil uil-comment"></i></span>
+                <span><i class="uil uil-share"></i></span>
+              </div>
+              <div class="bookmark">
+                <span><i class="uil uil-bookmark"></i></span>
+              </div>
+            </div>
+            <div class="liked-by">
+              <span><img src="img/profile-picture-3.jpg" alt=""></span>
+              <span><img src="img/profile-picture-1.jpg" alt=""></span>
+              <span><img src="img/profile-picture-4.jpg" alt=""></span>
+              <p>Liked by <b>Robin Buckley</b> and <b>1,231 others</b></p>
+            </div>
+            <div class="caption">
+              <p><b>Nancy Wheeler</b> Me. <span class="harsh-tag">#Work #Journalistic</span></p>
+            </div>
+            <div class="comments text-muted">
+              View all 254 comments
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+      <div class="right">
+        <div class="messages">
+          <div class="heading">
+            <h3>Messages</h3>
+            <i class="uil uil-edit"></i>
+          </div>
+            <div class="search-bar">
+              <i class="uil uil-search"></i>
+              <input type="search" placeholder="Search message" id="message-search">
+            </div>
+
+            <div class="category">
+              <h6 class="active">Primary</h6>
+              <h6>General</h6>
+              <h6 class="message-requests">Request(2)</h6>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img src="img/profile-picture-1.jpg" alt="">
+              </div>
+              <div class="message-body">
+                <h5>Thing</h5>
+                <p class="text-muted">
+                  Hey!
+                </p>
+              </div>
+            </div>
+
+            <div class="message">
+              <div class="profile-photo">
+                <img src="img/profile-picture-2.jpg" alt="">
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Thing 3</h5>
+                <p class="text-bold">
+                  Birthday Tomorrow!
+                </p>
+              </div>
+            </div>
+          
+        </div>
+
+        <div class="friend-requests">
+          <h4>Requests</h4>
+          <div class="requests">
+            <div class="info">
+              <div class="profile-photo">
+                <img src="img/profile-picture-2.jpg" alt="">
+              </div>
+              <div>
+                <h5>Thing 2</h5>
+                <p class="text-muted">
+                  4 mutual friends
+                </p>
+              </div>
+            </div>
+            <div class="action">
+              <button class="btn btn-primary">
+                Accept
+              </button>
+              <button class="btn">
+                Decline
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div class="customize-theme">
+    <div class="card">
+      <h3>Customize your view</h3>
+      <p class="text-muted">Manage your font size, color, and background.</p>
+
+      <div class="font-size">
+        <h4>Font Size</h4>
+        <div>
+          <h6>Aa</h6>
+          <div class="choose-size">
+            <span data-font-size="1" class="font-size-1"></span>
+            <span data-font-size="2" class="font-size-2 active"></span>
+            <span data-font-size="3" class="font-size-3"></span>
+            <span data-font-size="4" class="font-size-4"></span>
+            <span data-font-size="5" class="font-size-5"></span>
+          </div>
+          <h3>Aa</h3>
+        </div>
+      </div>
+
+      <div class="color">
+        <h4>Color</h4>
+        <div class="choose-color">
+          <span data-color="1" class="color-1 active"></span>
+          <span data-color="2" class="color-2"></span>
+          <span data-color="3" class="color-3"></span>
+          <span data-color="4" class="color-4"></span>
+          <span data-color="5" class="color-5"></span>
+        </div>
+      </div>
+
+      <div class="background">
+        <h4>Background</h4>
+        <div class="choose-bg">
+          <div class="bg-1 active">
+            <span></span>
+            <h5 for="bg-1">Light</h5>
+          </div>
+          <div class="bg-2">
+            <span></span>
+            <h5>Dim</h5>
+          </div>
+          <div class="bg-3">
+            <span></span>
+            <h5 for="bg-3">Light Out</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
